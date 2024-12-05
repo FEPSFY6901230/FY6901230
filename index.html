@@ -67,8 +67,8 @@
     <h2>AI in Autonomous Vehicles</h2>
     <p>Autonomous Vehicles are one of the biggest upcoming uses of AI in transportation. These vehicles rely on specific AI algorithms made for driving. Autonomous cars rely on sensors, actuators, complex algorithms, machine learning systems, and powerful processors to execute software. Autonomous cars create and maintain a map of their surroundings based on a variety of sensors situated in different parts of the vehicle (<a href="#synopsys2024">Synopsys, 2024</a>).</p>
     <p>One benefit of Autonomous Vehicles is that they will help decrease traffic accidents caused by human error, which is responsible for 94% of road crashes (<a href="#orsa2024">ORSA, 2024</a>). The graph shown below backs up the claim that autonomous vehicles are safer, at the ages 60-69 there are 206 fewer crashes per million miles driven. </p>
-    <p>According to (<a href="#Tesla2024">Tesla, 2024</a>), Tesla uses Autopilot, which is based on a deep neural network, sees and senses the surroundings around the vehicle by utilizing cameras and ultrasonic sensors. This powerful sensor and camera system provides drivers with a level of awareness of their surroundings that would be impossible for a driver to achieve on their own. In a handful of milliseconds, a powerful onboard computer evaluates these signals to assist in making your driving safer and less stressful. This sort of artificial intelligence is becoming more common in cars, but Tesla’s, at the moment represent the best implementation of driverless technology in a car. They have the most advanced driver’s assistance software. Because of the success of artificial intelligence, other big companies, such as BMW and Mercedes, have started to develop driving assistance artificial intelligence to compete with Tesla. Tesla’s autopilot, or "almighty autopilot," as Tesla would put it, is a combination of two parts: the first, which algorithmically controls the car and monitors its surroundings, while the second one only analyses the route and how to get to the destination.</p>
     <img src="CrashDiagram.png" alt="Banner" width="600" height="300">
+    <p>According to (<a href="#Tesla2024">Tesla, 2024</a>), Tesla uses Autopilot, which is based on a deep neural network, sees and senses the surroundings around the vehicle by utilizing cameras and ultrasonic sensors. This powerful sensor and camera system provides drivers with a level of awareness of their surroundings that would be impossible for a driver to achieve on their own. In a handful of milliseconds, a powerful onboard computer evaluates these signals to assist in making your driving safer and less stressful. This sort of artificial intelligence is becoming more common in cars, but Tesla’s, at the moment represent the best implementation of driverless technology in a car. They have the most advanced driver’s assistance software. Because of the success of artificial intelligence, other big companies, such as BMW and Mercedes, have started to develop driving assistance artificial intelligence to compete with Tesla. Tesla’s autopilot, or "almighty autopilot," as Tesla would put it, is a combination of two parts: the first, which algorithmically controls the car and monitors its surroundings, while the second one only analyses the route and how to get to the destination.</p>
     <p>(<a href="#rmi2024">RMI, 2024</a>)</p>
   </section>
 
@@ -188,22 +188,16 @@
  <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Word count function ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- Placeholder for total word count -->
+
 <p id="totalWordCount"></p>
 <hr>
 <script>
-  // Function to calculate and display word count for a specified section
   function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
     const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
     const wordArray = text.trim().split(/\s+/);
-    // Count the words
     const wordCount = wordArray.length;
-    // Return the word count for summing purposes
     return wordCount;
   }
-  // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
       const content = document.body.innerText || document.body.textContent;
       const wordCount = content.split(/\s+/).filter(Boolean).length;
@@ -211,7 +205,6 @@
       wordCountElement.textContent = `Total Word Count: ${wordCount}`;
       document.body.appendChild(wordCountElement);
     }
-  // Run the function for specific sections and display total count when the page loads
   window.onload = function () {
       displayTotalWordCount();
     };
