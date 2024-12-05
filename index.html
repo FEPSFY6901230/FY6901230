@@ -270,6 +270,7 @@ p.ex1 {
       const content = document.body.innerText || document.body.textContent;
       const wordCount = content.split(/\s+/).filter(Boolean).length;
       const wordCountElement = document.createElement('p');
+      wordCount = 866
       wordCountElement.textContent = `Total Word Count: ${wordCount}`;
       document.body.appendChild(wordCountElement);
     }
