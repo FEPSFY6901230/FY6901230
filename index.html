@@ -23,19 +23,19 @@
         <td><a href="#Abstract">Abstract</a></td>
       </tr>
       <tr>
-        <td><a href="#What is Artificial Intelligence">What is Artificial Intelligence</a></td>
+        <td><a href="#What_is_Artificial_Intelligence">What is Artificial Intelligence</a></td>
       </tr>
       <tr>
-        <td><a href="#Ai in Autonomous Vehicles">AI in Autonomous Vehicles</a></td>
+        <td><a href="#Ai_in_Autonomous_Vehicles">AI in Autonomous Vehicles</a></td>
       </tr>
       <tr>
-        <td><a href="#AI in Planes">AI in Planes</a></td>
+        <td><a href="#AI_in_Planes">AI in Planes</a></td>
       </tr>
       <tr>
-        <td><a href="#Ai in traffic management">AI in Traffic Management</a></td>
+        <td><a href="#Ai_in_traffic management">AI in Traffic Management</a></td>
       </tr>
       <tr>
-        <td><a href="#Ethical and Social problems">Ethical and Social Problems</a></td>
+        <td><a href="#Ethical_and_Social_problems">Ethical and Social Problems</a></td>
       </tr>
       <tr>
         <td><a href="#Conclusion">Conclusion</a></td>
@@ -56,14 +56,14 @@
 
   <hr>
 
-  <section id="What is Artificial Intelligence">
+  <section id="What_is_Artificial_Intelligence">
     <h2>What is Artificial Intelligence</h2>
     <p>Artificial intelligence (AI) is technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity, and autonomy (<a href="#ibm2024">IBM, 2024</a>). AI systems operate using machine learning, which helps algorithms to improve their performance by analyzing data. In transportation, AI helps automate repetitive processes and predict outcomes.</p>
   </section>
 
   <hr>
 
-  <section id="Ai in Autonomous Vehicles">
+  <section id="Ai_in_Autonomous_Vehicles">
     <h2>AI in Autonomous Vehicles</h2>
     <p>Autonomous Vehicles are one of the biggest upcoming uses of AI in transportation. These vehicles rely on specific AI algorithms made for driving. Autonomous cars rely on sensors, actuators, complex algorithms, machine learning systems, and powerful processors to execute software. Autonomous cars create and maintain a map of their surroundings based on a variety of sensors situated in different parts of the vehicle (<a href="#synopsys2024">Synopsys, 2024</a>).</p>
     <p>One benefit of Autonomous Vehicles is that they will help decrease traffic accidents caused by human error, which is responsible for 94% of road crashes (<a href="#orsa2024">ORSA, 2024</a>). The graph shown below backs up the claim that autonomous vehicles are safer, at the ages 60-69 there are 206 fewer crashes per million miles driven. </p>
@@ -74,14 +74,14 @@
 
   <hr>
 
-  <section id="AI in Planes">
+  <section id="AI_in_Planes">
     <h2>AI in Planes</h2>
     <p>AI is also causing big changes in the aviation industry as well. AI is used in planes for various functions such as flight planning, maintenance, and autopilot (<a href="#hilderman2022">Hilderman, 2022</a>). AI systems analyze real-time data, weather, air traffic, and current aircraft conditions to help plan the most optimal and safe route. Another use of AI is maintenance on planes. AI can process data collected from aircraft sensors, engines, hydraulic systems, avionics, and other critical components to detect anomalies in real time (<a href="#buildprompt2024">BuildPrompt, 2024</a>).</p>
   </section>
 
   <hr>
 
-  <section id="Ai in traffic management">
+  <section id="Ai_in_traffic_management">
     <h2>AI in Traffic Management</h2>
     <p>AI has a major role in improving the efficiency of traffic management. This helps to reduce congestion, which also decreases CO2 emissions from cars in urban areas. Traffic systems that use AI receive data from cameras and sensors to predict traffic and optimize routes that are the most efficient. Taipei, the capital city, is a prime example of Taiwan’s AI-driven transformation, having already implemented AI for traffic management (<a href="#forbes2024">Forbes Technology Council, 2024</a>).</p>
   </section>
@@ -122,6 +122,10 @@
     <p id="forbes2024">Forbes Technology Council, 2024. AI Around The Globe: How Other Nations Are Ahead Of The AI Curve. [online] Available at: 
       <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/24/ai-around-the-globe-how-other-nations-are-ahead-of-the-ai-curve/" target="_blank">https://www.forbes.com/councils/forbestechcouncil/2024/07/24/ai-around-the-globe-how-other-nations-are-ahead-of-the-ai-curve/</a> {Accessed 4 December 2024]
 
+
+
+
+    <hr>
 
 
       <!-- Last commit time display -->
@@ -192,10 +196,14 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("What_is_Artificial Intelligence");
+    const AnalysisCount = displayWordCount("Ai_in_Autonomous_Vehicles");
+    const IntroductionCount = displayWordCount("AI_in_Planes");
+    const AnalysisCount = displayWordCount("Ai_in_traffic management");
+    const IntroductionCount = displayWordCount("Ethical_and_Social_problems");
+    const AnalysisCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = What_is_Artificial Intelligence + Ai_in_Autonomous_Vehicles + AI_in_Planes + Ai_in_traffic management + Ethical_and_Social_problems + Conclusion;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
