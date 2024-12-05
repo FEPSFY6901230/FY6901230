@@ -57,33 +57,55 @@
   <hr>
 
   <section id="What_is_Artificial_Intelligence">
+    <pre id="1">
     <h2>What is Artificial Intelligence</h2>
     <p>Artificial intelligence (AI) is technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity, and autonomy (<a href="#ibm2024">IBM, 2024</a>). AI systems operate using machine learning, which helps algorithms to improve their performance by analyzing data. In transportation, AI helps automate repetitive processes and predict outcomes.</p>
+    </pre>
   </section>
 
   <hr>
 
   <section id="Ai_in_Autonomous_Vehicles">
+    <pre id="2">
     <h2>AI in Autonomous Vehicles</h2>
     <p>Autonomous Vehicles are one of the biggest upcoming uses of AI in transportation. These vehicles rely on specific AI algorithms made for driving. Autonomous cars rely on sensors, actuators, complex algorithms, machine learning systems, and powerful processors to execute software. Autonomous cars create and maintain a map of their surroundings based on a variety of sensors situated in different parts of the vehicle (<a href="#synopsys2024">Synopsys, 2024</a>).</p>
     <p>One benefit of Autonomous Vehicles is that they will help decrease traffic accidents caused by human error, which is responsible for 94% of road crashes (<a href="#orsa2024">ORSA, 2024</a>). The graph shown below backs up the claim that autonomous vehicles are safer, at the ages 60-69 there are 206 fewer crashes per million miles driven. </p>
     <p>According to (<a href="#Tesla2024">Tesla, 2024</a>), Tesla uses Autopilot, which is based on a deep neural network, sees and senses the surroundings around the vehicle by utilizing cameras and ultrasonic sensors. This powerful sensor and camera system provides drivers with a level of awareness of their surroundings that would be impossible for a driver to achieve on their own. In a handful of milliseconds, a powerful onboard computer evaluates these signals to assist in making your driving safer and less stressful. This sort of artificial intelligence is becoming more common in cars, but Tesla’s, at the moment represent the best implementation of driverless technology in a car. They have the most advanced driver’s assistance software. Because of the success of artificial intelligence, other big companies, such as BMW and Mercedes, have started to develop driving assistance artificial intelligence to compete with Tesla. Tesla’s autopilot, or "almighty autopilot," as Tesla would put it, is a combination of two parts: the first, which algorithmically controls the car and monitors its surroundings, while the second one only analyses the route and how to get to the destination.</p>
     <img src="CrashDiagram.png" alt="Banner" width="600" height="300">
     <p>(<a href="#rmi2024">RMI, 2024</a>)</p>
+    </pre>
   </section>
 
   <hr>
 
   <section id="AI_in_Planes">
+    <pre id="3">
     <h2>AI in Planes</h2>
     <p>AI is also causing big changes in the aviation industry as well. AI is used in planes for various functions such as flight planning, maintenance, and autopilot (<a href="#hilderman2022">Hilderman, 2022</a>). AI systems analyze real-time data, weather, air traffic, and current aircraft conditions to help plan the most optimal and safe route. Another use of AI is maintenance on planes. AI can process data collected from aircraft sensors, engines, hydraulic systems, avionics, and other critical components to detect anomalies in real time (<a href="#buildprompt2024">BuildPrompt, 2024</a>).</p>
+    </pre>
   </section>
 
   <hr>
 
   <section id="Ai_in_traffic_management">
+    <pre id="4">
     <h2>AI in Traffic Management</h2>
     <p>AI has a major role in improving the efficiency of traffic management. This helps to reduce congestion, which also decreases CO2 emissions from cars in urban areas. Traffic systems that use AI receive data from cameras and sensors to predict traffic and optimize routes that are the most efficient. Taipei, the capital city, is a prime example of Taiwan’s AI-driven transformation, having already implemented AI for traffic management (<a href="#forbes2024">Forbes Technology Council, 2024</a>).</p>
+    </pre>
+  </section>
+
+  <section id="Ethical_and_social_problems">
+    <pre id="5">
+      <p>Ai provides us with many advantages in transport, but they do also raise ethical and social issues. One concern could be data privacy. This is because AI uses data so this could raise concerns about how data is collected and stored. This stored data could be misused or exploited to harm people.</p>
+      <p>Another concern could be algorithmic bias, this could especially effect traffic management. For example, the system might have a bias to certain neighbourhoods or routes causing the traffic management to be less efficient and unfair.</p>#
+    </pre>
+  </section>
+
+  <section id="Conclusion">
+    <pre id="6">
+      <h2>Conclusion</h2>
+      <p>Artificial intelligence is definitely transforming the transport industry, by giving us alternatives that improve efficiency and safety. The potential of AI is limitless, and I believe is the answer to the future of transportation. However, as we implement Ai more into our daily lives, we also need to ensure that the data is safe and that there is no bias in the algorithms. By addressing these challenges responsibly, AI can lead the way to a new era transportation globally.</p>
+    </pre>
   </section>
 
   <hr>
@@ -196,12 +218,12 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const What_is_Artificial Intelligence = displayWordCount("What_is_Artificial Intelligence");
-    const Ai_in_Autonomous_Vehicles = displayWordCount("Ai_in_Autonomous_Vehicles");
-    const AI_in_Planes = displayWordCount("AI_in_Planes");
-    const Ai_in_traffic_management = displayWordCount("Ai_in_traffic_management");
-    const Ethical_and_Social_problems = displayWordCount("Ethical_and_Social_problems");
-    const Conclusion = displayWordCount("Conclusion");
+    const What_is_Artificial Intelligence = displayWordCount("1");
+    const Ai_in_Autonomous_Vehicles = displayWordCount("2");
+    const AI_in_Planes = displayWordCount("3");
+    const Ai_in_traffic_management = displayWordCount("4");
+    const Ethical_and_Social_problems = displayWordCount("5");
+    const Conclusion = displayWordCount("6");
     // Calculate the sum of all selected sections
     const totalWordCount = What_is_Artificial Intelligence + Ai_in_Autonomous_Vehicles + AI_in_Planes + Ai_in_traffic_management + Ethical_and_Social_problems + Conclusion;
     // Display the total word count
