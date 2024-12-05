@@ -205,18 +205,14 @@
   }
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const What_is_Artificial_Intelligence = displayWordCount("What_is_Artificial_Intelligence");
-    const Ai_in_Autonomous_Vehicles = displayWordCount("Ai_in_Autonomous_Vehicles");
-    const AI_in_Planes = displayWordCount("AI_in_Planes");
-    const Ai_in_traffic_management = displayWordCount("Ai_in_traffic_management");
-    const Ethical_and_Social_problems = displayWordCount("Ethical_and_Social_problems");
-    const Conclusion = displayWordCount("Conclusion");
-    // Calculate the sum of all selected sections
-    const totalWordCount = What_is_Artificial_Intelligence + Ai_in_Autonomous_Vehicles + AI_in_Planes + Ai_in_traffic_management + Ethical_and_Social_problems + Conclusion;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
+      const content = document.body.innerText || document.body.textContent;
+      const wordCount = content.split(/\s+/).filter(Boolean).length;
+      const wordCountElement = document.createElement('p');
+      wordCountElement.textContent = `Total Word Count: ${wordCount}`;
+      document.body.appendChild(wordCountElement);
+    }
   // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+  window.onload = function () {
+      displayTotalWordCount();
+    };
 </script>
