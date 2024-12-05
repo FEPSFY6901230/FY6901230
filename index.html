@@ -146,14 +146,25 @@
       document.body.appendChild(lastUpdatedElement);
     }
 
-    function displayTotalWordCount() {
-      const content = document.body.innerText || document.body.textContent;
-      const wordCount = content.split(/\s+/).filter(Boolean).length;
-      const wordCountElement = document.createElement('p');
-      wordCountElement.textContent = `Total Word Count: ${wordCount}`;
-      document.body.appendChild(wordCountElement);
+    function displayTotalWordCount() const sectionIds = ['What_is_Artificial_Intelligence', 'Ai_in_Autonomous_Vehicles', 'AI_in_Planes', 'Ethical_and_Social_problems', 'Conclusion'];
+  
+  let totalWordCount = 0;
+
+  sectionIds.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) {
+      const content = section.innerText || section.textContent;
+      totalWordCount += content.split(/\s+/).filter(Boolean).length;
     }
-  </script>
+  });
+
+  // Display the total word count for the specific sections
+  const wordCountElement = document.createElement('p');
+  wordCountElement.textContent = `Total Word Count (for selected sections): ${totalWordCount}`;
+  document.body.appendChild(wordCountElement);
+}
+    
+</script>
 </body>
 
 </html>
