@@ -275,10 +275,15 @@ p.ex1 {
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("AI_in_Planes");
-    const AnalysisCount = displayWordCount("Conclusion");
+    const WhatisAI = displayWordCount("What_is_Artificial_Intelligence");
+    const AIinAV = displayWordCount("Ai_in_Autonomous_Vehicles");
+    const AIinPlanes = displayWordCount("AI_in_Planes");
+    const AIinTraffic = displayWordCount("Ai_in_traffic_management");
+    const Ethical = displayWordCount("Ethical_and_social_problems");
+    const Conclusion = displayWordCount("Conclusion");
+    
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = WhatisAI + AIinAV + AI_in_Planes + AIinTraffic + Ethical + Conclusion;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
